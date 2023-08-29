@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Train Booking </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="confirmation.js"></script>
+<style>
+    body{
+        background-color:papayawhip ;
+        background-size: cover;
+        background-image: url(https://th.bing.com/th/id/OIP.JUXsJeIagxcxx9H764tUQwHaE7?w=295&h=197&c=7&r=0&o=5&dpr=1.5&pid=1.7);
+        background-blend-mode: darken;
+background-repeat: no-repeat;
+background-blend-mode: screen;}
+</style>
+</head>
+<body>
+    <button><a href="home_page.html"> <<--BACK TO HOMEPAGE</a></button>
+<h1> Train Booking </h1>
+<form>
+<p><strong>Name:<strong></p>
+<input type="text" name="name" id="name" required>
+<p><strong>Number:</stong></p>
+<input type="text" name="number" id="num" pattern="[0-9]{10}" required>
+<p><strong>Email:</strong></p>
+<input type="email" name="mail" required > 
+<legend><p><strong> Location:</strong></p></legend>
+<fieldset>
+<p> From: </p>
+<input type="text" name="flocation" id="flocation" placeholder="Enter departure location." required>
+<p> To: </p>
+<input type="text" name="tlocation" id="tlocation" placeholder="Enter arrival location." required>
+</fieldset>
+<p><strong> Date:</strong></p>
+<input type="date" name="date" required>
+<p><strong> No. of Passengers:</strong></p>
+<input type="number" name="number" min="1" max="20" value="1" required>
+<p><strong> Class:</strong></p>
+<select name="class">
+<option value="Sleeper Class">Sleeper Class</option>
+<option value="Third AC">Third AC</option>
+<option value="Second AC">Second AC</option>
+<option value="First AC">First AC</option>
+<option value="Second Seating">Second Seating</option>
+<option value="AC Chair Car">AC Chair Car</option>
+</select></br><br>
+<input type="submit" value="Continue" onclick="confirm()">
+</form>
+</body>
+</html>

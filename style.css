@@ -1,0 +1,14 @@
+h1{background-color: rosybrown;
+    padding:5px;
+    border:5px solid dimgray;
+    font-family: Arial;}
+h3{color:maroon;
+    font-family: Tahoma;}    
+   p{color:darkred;
+    font-family: Verdana;}
+   body{background-color: papayawhip;}
+   li{color:darkslategray; }
+    input{
+        width: 25%;
+        height:25px;
+        background-color:linen;}
